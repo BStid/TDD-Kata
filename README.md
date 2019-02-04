@@ -7,7 +7,7 @@ Repeat these steps until the functionality is implemented :
 3. Refactor the code to make it clean while keeping the intended functionality.
 
 ## File Structure:
-In order for a test to be read by Jest, the test file must be formatted:
+In order for a test to be read by Jest, the test file must be formatted either:
 - Inside of a ```__tests__``` directory with any type of naming convention for the file.
 
 _or_
@@ -15,4 +15,5 @@ _or_
 - The test file can be located anywhere in the project but must be written as either:
   - *testFile*.test.js
   - *testFile*.spec.js
-    Jest knows to run any files listed with *.spec.js or *.test.js or any file underneith ```__tests__```.
+  
+Jest knows to run any files listed with *.spec.js or *.test.js or any file underneith ```__tests__```.
