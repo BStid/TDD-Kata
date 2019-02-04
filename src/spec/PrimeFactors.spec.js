@@ -1,6 +1,6 @@
 describe("PrimeFactors", () => {
   it("calculates the prime factors of an integer", () => {
-    let primeFactors = require("../src/PrimeFactors");
+    let primeFactors = require("../PrimeFactors");
 
     expect(primeFactors.of(1)).toEqual([]);
     expect(primeFactors.of(2)).toEqual([2]);

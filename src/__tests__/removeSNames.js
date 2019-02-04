@@ -1,4 +1,4 @@
-const removeSNames = require("../src/removeSNames");
+const removeSNames = require("../removeSNames");
 
 describe("remove names starting with S", () => {
   it("should remove all names starting with s", () => {

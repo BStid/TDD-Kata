@@ -1,5 +1,5 @@
-const isPalindrome = require("../src/isPalindrome");
-const longestPalindrome = require("../src/longestPalindrome");
+const isPalindrome = require("../isPalindrome");
+const longestPalindrome = require("../longestPalindrome");
 
 describe("return the longest palindrome in a sentence", () => {
   it("should verify if a word is a palindrome", () => {
