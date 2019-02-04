@@ -2,7 +2,7 @@ let PrimeFactors = function() {
   return;
 };
 
-PrimeFactors.prototype.of = function(n) {
+PrimeFactors.prototype.of = n => {
   let result = [];
 
   for (let divisor = 2; divisor <= n; ++divisor) {
