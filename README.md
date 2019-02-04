@@ -1,7 +1,7 @@
 # TDD-Kata
 
 TDD Guidelines:
-Loop over these steps until the functionality is implemtned:
+Loop over these steps until the functionality is implemented :
     1. Write a test which fails intentionally, testing a small part of functionality.
     2. Implement the functionality defined in the test ( and nothing more) to make the tests pass.
     3. Refactor the code to make it clean while keeping the intended functionality.
