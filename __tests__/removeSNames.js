@@ -2,7 +2,7 @@ const removeSNames = require("../src/removeSNames");
 
 describe("remove names starting with S", () => {
   it("should remove all names starting with s", () => {
-    const names = ["Scott", "Courtney"];
+    const names = ["Scott", "Courtney", "Steve"];
     expect(removeSNames(names)).not.toContain("Scott");
   });
   it("should not remove other names", () => {
