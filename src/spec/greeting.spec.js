@@ -14,6 +14,8 @@ describe("Give a greeting", () => {
 
   it("should account for all caps", () => {
     expect(greeting("BEN")).toBe("HELLO, BEN!");
+    expect(greeting("BEn")).toBe("Hello, BEn.");
+    expect(greeting("BEn")).toMatch("BEn");
   });
 
   it("should account for null inputs", () => {
