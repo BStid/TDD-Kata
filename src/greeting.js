@@ -1,5 +1,7 @@
 const greeting = name => {
-  return `Hello, ${name.charAt(0).toUpperCase() + name.slice(1)}.`;
+  return name
+    ? `Hello, ${name.charAt(0).toUpperCase() + name.slice(1)}.`
+    : "Hello, my friend.";
 };
 
 module.exports = greeting;

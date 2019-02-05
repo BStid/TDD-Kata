@@ -10,4 +10,10 @@ describe("Give a greeting", () => {
     expect(greeting("ben")).toMatch("Ben");
     expect(greeting("mike")).toBe("Hello, Mike.");
   });
+  it("should account for null inputs", () => {
+    expect(greeting()).toBe("Hello, my friend.");
+  });
+  //   it('should account for number inputs', () => {
+
+  //   });
 });
