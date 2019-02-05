@@ -6,6 +6,6 @@ describe("String Calculator", () => {
     expect(stringCalculator("2", "4")).toEqual(6);
   });
   it("should account for nothing passed", () => {
-    expect(stringCalculator()).toBe("");
+    expect(stringCalculator()).toBe(0);
   });
 });

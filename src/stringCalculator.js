@@ -7,7 +7,7 @@ let stringCalculator = (string1, string2) => {
     }
     return newNumber;
   }
-  return "";
+  return 0;
 };
 
 module.exports = stringCalculator;
