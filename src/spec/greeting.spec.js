@@ -13,7 +13,7 @@ describe("Give a greeting", () => {
   it("should account for null inputs", () => {
     expect(greeting()).toBe("Hello, my friend.");
   });
-  //   it('should account for number inputs', () => {
-
-  //   });
+  it("should account for number inputs", () => {
+    expect(greeting(123)).toBe("Hello, my friend.");
+  });
 });
