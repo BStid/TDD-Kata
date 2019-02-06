@@ -1,17 +1,18 @@
 const greeting = name => {
   if (Array.isArray(name)) {
-    if (name.length === 1) {
+    let length = name.length;
+    if (length === 1) {
       return `Hello, ${name[0]}.`;
-    } else if (name.length === 2) {
+    } else if (length === 2) {
       return `Hello, ${name[0]} and ${name[1]}.`;
     } else {
       let greetingSentence = "Hello,";
-      for (let i = 0; i < name.length; i++) {
-        if (i < name.length - 1) {
-          greetingSentence += ` ${name[i]},`;
-        } else {
-          greetingSentence += ` and ${name[i]}.`;
-        }
+      let index = 0;
+      while (index < length) {
+        index < length - 1
+          ? (greetingSentence += ` ${name[index]},`)
+          : (greetingSentence += ` and ${name[index]}.`);
+        ++index;
       }
       return greetingSentence;
     }
