@@ -35,7 +35,7 @@ describe("Give a greeting", () => {
 });
 
 describe("Multiple Names", () => {
-  it("should one name in an array", () => {
+  it("should handle one name in an array", () => {
     greetingToBe(["Alex"], "Hello, Alex.");
   });
   it("should handle an array of names", () => {

@@ -1,23 +1,27 @@
 const greeting = name => {
   if (Array.isArray(name)) {
     let length = name.length;
-    if (length === 1) {
-      return `Hello, ${name[0]}.`;
-    } else if (length === 2) {
-      return `Hello, ${name[0]} and ${name[1]}.`;
-    } else {
-      let greetingSentence = "Hello,";
-      let index = 0;
-      while (index < length) {
-        index < length - 1
-          ? (greetingSentence += ` ${name[index]},`)
-          : (greetingSentence += ` and ${name[index]}.`);
-        ++index;
-      }
-      return greetingSentence;
-    }
+    return length === 1
+      ? `Hello, ${name[0]}.`
+      : length === 2
+      ? `Hello, ${name[0]} and ${name[1]}.`
+      : handleMultipleNames(name);
   }
   return typeof name === "string" ? checkAllCaps(name) : "Hello, my friend.";
+};
+
+const handleMultipleNames = name => {
+  let greetingSentence = "Hello,";
+  let index = 0;
+  let length = name.length;
+
+  while (index < length) {
+    index < length - 1
+      ? (greetingSentence += ` ${name[index]},`)
+      : (greetingSentence += ` and ${name[index]}.`);
+    ++index;
+  }
+  return greetingSentence;
 };
 
 const checkAllCaps = name => {
