@@ -1,4 +1,7 @@
 const romanNumeral = letter => {
+  return typeof letter === "string" ? checkMultipleRomanNumerals(letter) : 0;
+};
+const checkMultipleRomanNumerals = letter => {
   let letterArray = letter.split("");
   let length = letterArray.length;
   let addedNumber = 0;

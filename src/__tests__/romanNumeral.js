@@ -1,6 +1,11 @@
 const romanNumeral = require("../romanNumeral");
 
 describe("Roman Numeral to Number", () => {
+  it("should handle falsy inputs", () => {
+    expect(romanNumeral()).toEqual(0);
+    expect(romanNumeral(1)).toEqual(0);
+    expect(romanNumeral(null)).toEqual(0);
+  });
   it("should convert Roman Numeral to a Number", () => {
     expect(romanNumeral("I")).toEqual(1);
     expect(romanNumeral("V")).toEqual(5);
@@ -20,8 +25,6 @@ describe("Roman Numeral to Number", () => {
     expect(romanNumeral("IV")).toEqual(4);
     expect(romanNumeral("IX")).toEqual(9);
     expect(romanNumeral("XIV")).toEqual(14);
-    expect(romanNumeral("IL")).toEqual(49);
-    expect(romanNumeral("XC")).toEqual(90);
     expect(romanNumeral("CXLIV")).toEqual(144);
     expect(romanNumeral("MCMXLIV")).toEqual(1944);
   });
