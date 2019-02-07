@@ -10,4 +10,15 @@ describe("Roman Numeral to Number", () => {
     expect(romanNumeral("D")).toEqual(500);
     expect(romanNumeral("M")).toEqual(1000);
   });
+  //   it("should handle multiple Roman Numerals", () => {
+  //     expect(romanNumeral("II")).toEqual(2);
+  //     expect(romanNumeral("III")).toEqual(3);
+  //   });
+  //   it("should be able to subtract if a smaller RN comes before a bigger one", () => {
+  //     expect(romanNumeral("IV")).toEqual(4);
+  //     expect(romanNumeral("IX")).toEqual(9);
+  //     expect(romanNumeral("IL")).toEqual(49);
+  //     expect(romanNumeral("XC")).toEqual(90);
+  //     expect(romanNumeral("MCMXLIV")).toEqual(1944);
+  //   });
 });
