@@ -1,4 +1,14 @@
 const romanNumeral = letter => {
+  let letterArray = letter.split("");
+  let length = letterArray.length;
+  let addedNumber = 0;
+
+  for (let index = 0; index < length; index++) {
+    addedNumber += convertRomanNumeral(letterArray[index]);
+  }
+  return addedNumber;
+};
+const convertRomanNumeral = letter => {
   const romanNumeralConverter = {
     I: 1,
     V: 5,
@@ -15,5 +25,4 @@ const romanNumeral = letter => {
   }
   return null;
 };
-
 module.exports = romanNumeral;
