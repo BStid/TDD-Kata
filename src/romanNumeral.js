@@ -4,7 +4,13 @@ const romanNumeral = letter => {
   let addedNumber = 0;
 
   for (let index = 0; index < length; index++) {
-    addedNumber += convertRomanNumeral(letterArray[index]);
+    let currentNumber = convertRomanNumeral(letterArray[index]);
+    let nextNumber = convertRomanNumeral(letterArray[index + 1]);
+    if (currentNumber < nextNumber) {
+      currentNumber = nextNumber - currentNumber;
+      index++;
+    }
+    addedNumber += currentNumber;
   }
   return addedNumber;
 };
