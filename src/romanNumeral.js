@@ -1,3 +1,5 @@
+//Convert Roman Numeral into a Number
+
 const romanNumeral = letter => {
   return typeof letter === "string" ? checkMultipleRomanNumerals(letter) : 0;
 };
