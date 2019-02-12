@@ -1,3 +1,5 @@
+//Find the longest palindrome in a sentence
+
 const isPalindrome = require("./isPalindrome");
 
 const longestPalindrome = sentence => {
